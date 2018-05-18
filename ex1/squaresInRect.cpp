@@ -18,6 +18,8 @@ std::vector<int> squaresInRect(int length, int width)
 {
   std::vector<int> ret;
 
+  if (length == width)
+    return (ret);
   return (squaresInRectRec(length, width, ret));
 }
 
