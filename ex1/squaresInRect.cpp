@@ -3,10 +3,14 @@
 
 std::vector<int> squaresInRectRec(int length, int width, std::vector<int> ret)
 {
+  //Ending condition
   if (length == 0 || width == 0)
     return (ret);
+  //Stocking the result of the condition to microoptimize
   bool q = length > width;
+  //Adding the smallest length/width in the vector
   ret.push_back(q ? width : length);
+  //Tail recursion to give the right arguments in the right order and continue the program
   return (squaresInRectRec(q ? width : length, q ? length - width : width - length, ret));
 }
 
