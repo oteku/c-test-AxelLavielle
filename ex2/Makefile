@@ -1,7 +1,6 @@
 NAME	=	fight
 
-SRC	=	fight.cpp \
-		Fighter.hpp
+SRC	=	fight.cpp
 
 OBJ	=	$(SRC:.cpp=.o)
 
